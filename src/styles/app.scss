@@ -1,0 +1,15 @@
+@use './text.scss';
+@use './nav.scss';
+@use './product.scss';
+@use './cart.scss';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.global__container {
+    max-width: 1000px;
+}

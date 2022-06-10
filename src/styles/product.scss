@@ -1,0 +1,26 @@
+.product__wrap {
+    margin: 5% 7%;
+    display: flex;
+    justify-content: space-between;
+
+    button {
+        background-color: white;
+        height: 40px;
+        min-width: 120px;
+        cursor: pointer;
+    }
+
+    p {
+        width: 100px;
+    }
+}
+
+.product__old-price {
+    margin-left: 20px;
+    color: red;
+}
+
+.product__details {
+    display: flex;
+    flex-direction: column;
+}
