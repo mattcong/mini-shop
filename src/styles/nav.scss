@@ -1,11 +1,26 @@
 .nav__wrap {
     width: 100%;
     padding: 5%;
+
+    @media(max-width: 650px) {
+        padding: 10% 5%
+    }
     
-    button {
-        background-color: white;
+    .mid-button {
+
+        // MUI style override
+    
         height: 40px;
-        width: 120px;
-        cursor: pointer;
+        min-width: 130px;
+        background-color: white;
+        border: 2px solid black;
+        font-family: inherit;
+        color: black;
+        border-radius: 0;
+        text-transform: capitalize;
+    }
+
+    .mid-button:disabled {
+        border: 2px solid #b2b2b2;
     }
 }
