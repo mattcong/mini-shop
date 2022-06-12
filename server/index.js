@@ -3,10 +3,10 @@ const session = require('express-session');
 const path = require('path');
 const productData = require('./products');
 const { cartItemCount, getCartItems, calculateCartTotal, removeEmpty } = require('./middleware.js');
+require('dotenv').config();
 
 
 const app = express()
-
 const port = process.env.PORT || 3000;
 
 const DIST_DIR = path.join(__dirname, '../dist')
@@ -15,7 +15,7 @@ const HTML_FILE = path.join(DIST_DIR, 'index.html')
 
 app.use(express.static(DIST_DIR))
 app.use(session({
-    secret: "secret-key",
+    secret: process.env.SECRET_KEY,
     resave: false,
     saveUninitialized: false,
     cookie: { maxAge: 6000000 }

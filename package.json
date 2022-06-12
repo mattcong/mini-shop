@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development && nodemon server/index.js",
-    "build": "webpack --mode production && node server/index.js"
+    "start": "node server/index.js",
+    "heroku-postbuild": "webpack --mode production"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +14,7 @@
     "@emotion/styled": "^11.8.1",
     "@mui/material": "^5.8.3",
     "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "express-session": "^1.17.3",
     "react": "^18.1.0",
